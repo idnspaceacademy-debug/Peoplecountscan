@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download People Counting APK - Aplikasi penghitungan dan analisis kerumunan dengan teknologi AI">
+    <title>People Counting - Download APK Android</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #ddd;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .intro-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .intro-section p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tech-stack h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .tech-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .tech-item {
+            background: #f5f5f5;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .tech-item h4 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .tech-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .download-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .download-section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .download-info {
+            background: #f5f5f5;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .download-info p {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .download-info strong {
+            color: #667eea;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 16px rgba(102, 126, 234, 0.6);
+        }
+
+        .download-btn:active {
+            transform: scale(0.98);
+        }
+
+        .cta-section {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-section h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .system-requirements {
+            background: #fff3cd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #ffc107;
+        }
+
+        .system-requirements h3 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+
+        .system-requirements ul {
+            color: #856404;
+            margin-left: 1.5rem;
+        }
+
+        .system-requirements li {
+            margin-bottom: 0.3rem;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .download-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎥 People Counting</h1>
+        <p>Sistem Analisis Kerumunan dengan Teknologi Kecerdasan Buatan</p>
+    </header>
+
+    <div class="container">
+        <section class="intro-section">
+            <h2>Tentang Aplikasi</h2>
+            <p>
+                People Counting adalah aplikasi mobile canggih yang memanfaatkan teknologi AI untuk menghitung dan menganalisis kerumunan secara real-time. 
+                Aplikasi ini dirancang untuk memberikan insights mendalam tentang pola kerumunan dengan antarmuka yang intuitif dan fitur-fitur powerful.
+            </p>
+            <p>
+                Dengan dukungan Gemini AI dan teknologi computer vision terkini, aplikasi ini dapat memberikan analisis akurat dan actionable insights untuk berbagai use case.
+            </p>
+        </section>
+
+        <section class="download-section">
+            <h2>📥 Download APK</h2>
+            <div class="download-info">
+                <p><strong>Versi Terbaru:</strong> People Counting Release</p>
+                <p><strong>Format:</strong> APK (Android Package)</p>
+                <p><strong>Ukuran:</strong> Dapat berbeda tergantung konfigurasi</p>
+            </div>
+            <a href="/app-release.apk" download class="download-btn">⬇️ Download APK Android</a>
+            
+            <div class="system-requirements">
+                <h3>📱 Persyaratan Sistem</h3>
+                <ul>
+                    <li>Android 5.0 (API Level 21) atau lebih tinggi</li>
+                    <li>Minimal 100 MB ruang penyimpanan</li>
+                    <li>Koneksi internet untuk fitur AI Gemini</li>
+                    <li>Kamera device (untuk scan dan analisis)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="color: white; margin-bottom: 1.5rem; font-size: 2rem;">✨ Fitur Utama</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">📊</div>
+                    <h3>Live Tracking</h3>
+                    <p>Pantau kerumunan secara real-time dengan visualisasi data yang akurat dan responsif.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">📈</div>
+                    <h3>Analytics Dashboard</h3>
+                    <p>Analisis komprehensif dengan statistik detail, tren, dan insight mendalam tentang pola kerumunan.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">📸</div>
+                    <h3>Sketch Analysis</h3>
+                    <p>Analisis gambar atau sketsa kerumunan menggunakan teknologi Gemini AI untuk hasil yang akurat.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">📋</div>
+                    <h3>History & Export</h3>
+                    <p>Simpan riwayat analisis dan ekspor laporan dalam format PDF untuk keperluan dokumentasi.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">🔔</div>
+                    <h3>Notifications</h3>
+                    <p>Dapatkan notifikasi real-time untuk aktivitas dan alert penting dari sistem.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon">⚙️</div>
+                    <h3>Settings & Customization</h3>
+                    <p>Kustomisasi aplikasi sesuai kebutuhan dengan berbagai pilihan pengaturan yang fleksibel.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <h2>🛠️ Stack Teknologi</h2>
+            <div class="tech-list">
+                <div class="tech-item">
+                    <h4>Platform</h4>
+                    <p>Android Native dengan Kotlin</p>
+                </div>
+                <div class="tech-item">
+                    <h4>UI Framework</h4>
+                    <p>Jetpack Compose</p>
+                </div>
+                <div class="tech-item">
+                    <h4>AI/ML</h4>
+                    <p>Google Gemini API</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Database</h4>
+                    <p>Room Database (SQLite)</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Architecture</h4>
+                    <p>MVVM + Repository Pattern</p>
+                </div>
+                <div class="tech-item">
+                    <h4>Export</h4>
+                    <p>PDF Report Generation</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>🚀 Pelajari Lebih Lanjut</h2>
+            <p style="color: #666; margin-bottom: 1.5rem; font-size: 1.05rem;">
+                Tertarik dengan teknologi di balik aplikasi ini? Jelajahi kode sumber dan dokumentasi lengkapnya.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://github.com/idnspaceacademy-debug/Peoplecountscan" class="btn btn-primary">📖 GitHub Repository</a>
+                <a href="https://github.com/idnspaceacademy-debug/Peoplecountscan#readme" class="btn btn-secondary">📚 Dokumentasi</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 People Counting - IDN Space Academy</p>
+        <p>Sistem Analisis Kerumunan dengan Teknologi AI</p>
+        <p>Download aplikasi dan mulai analisis kerumunan Anda hari ini!</p>
+    </footer>
+</body>
+</html>
