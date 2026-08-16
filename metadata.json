@@ -1,0 +1,6 @@
+{
+  "name": "PeopleCount",
+  "description": "Aplikasi AI Real-time People Tracking, Crowd Capacity Monitoring, Dashboard Analisis, Notifikasi Otomatis, dan Export PDF.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
